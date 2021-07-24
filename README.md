@@ -36,3 +36,6 @@ vb.cpus = <number of cpus>
 cd UERANSIM/
 sudo build/nr-ue -c config/openfree5gs-ue.yml -n 3.
 ```
+
+## References
+Partially forked from [abousselmi/vagrant-free5gc](https://github.com/abousselmi/vagrant-free5gc)
