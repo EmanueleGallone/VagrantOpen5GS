@@ -1,0 +1,30 @@
+# Vagrantbox for open5GS
+
+## Prerequisites
+
+### Vagrant
+
+You can install vagrant by following the steps provided here: https://www.vagrantup.com/docs/installation/
+
+### Virtualbox
+
+Please update the provider in the `Vagrantfile` with your favorite one.
+
+For the Virtualbox provider you need to install virtualbox on your machine. Please follow install steps here: https://www.virtualbox.org/wiki/Linux_Downloads
+
+
+## Update
+
+Please update the RAM and CPU values found in `Vagrantfile` to best fit you system configuration.
+
+```console
+vb.memory = <memory in KB>
+vb.cpus = <number of cpus>
+```
+
+## Configuration
+
+* on free5gs VM, edit amf.yml and upf.yml as described in https://open5gs.org/open5gs/docs/guide/01-quickstart/ (in **amf.yml** put the NGAP address = [Free5GSVM-IP], and in **upf.yml** GTPU Address = [Free5GSVM-IP]).
+* open the browser and connect to the <Free5gs-VM-IP>:3000 to access the WEBUI and insert all the UE info described within the UERANSIM-VM/UERANSIM/config/openfree5gs-ue.yml; If you want to use more UEs, add entries with incremental IMSI.
+* on UERANSIM-VM, edit the **config/open5gs-gnb.yml** properly, as described in https://open5gs.org/open5gs/docs/guide/01-quickstart/
+* to use more UEs in UERANSIM-VM, use sudo build/nr-ue -c config/openfree5gs-ue.yml -n 3.
