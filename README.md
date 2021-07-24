@@ -24,7 +24,11 @@ vb.cpus = <number of cpus>
 
 ## Configuration
 
-* on free5gs VM, edit amf.yml and upf.yml as described in https://open5gs.org/open5gs/docs/guide/01-quickstart/ (in **amf.yml** put the NGAP address = [Free5GSVM-IP], and in **upf.yml** GTPU Address = [Free5GSVM-IP]).
-* open the browser and connect to the <Free5gs-VM-IP>:3000 to access the WEBUI and insert all the UE info described within the UERANSIM-VM/UERANSIM/config/openfree5gs-ue.yml; If you want to use more UEs, add entries with incremental IMSI.
-* on UERANSIM-VM, edit the **config/open5gs-gnb.yml** properly, as described in https://open5gs.org/open5gs/docs/guide/01-quickstart/
-* to use more UEs in UERANSIM-VM, use sudo build/nr-ue -c config/openfree5gs-ue.yml -n 3.
+* On free5gs VM, edit amf.yml and upf.yml as described in https://open5gs.org/open5gs/docs/guide/01-quickstart/ (in **amf.yml** put the NGAP address = [Free5GSVM-IP], and in **upf.yml** GTPU Address = [Free5GSVM-IP]).
+
+
+* Open the browser and connect to the [Free5gs-VM-IP]:3000 to access the WEBUI and insert all the UE info described within the UERANSIM-VM/UERANSIM/config/openfree5gs-ue.yml; If you want to use more UEs, add entries with incremental IMSI.
+
+
+* On UERANSIM-VM, edit the **config/open5gs-gnb.yml** properly, as described in https://open5gs.org/open5gs/docs/guide/01-quickstart/, and in the config/open5gs-ue.yml set the gnb IP address.
+* To use more UEs in UERANSIM-VM, use sudo build/nr-ue -c config/openfree5gs-ue.yml -n 3.
