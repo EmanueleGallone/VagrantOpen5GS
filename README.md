@@ -18,7 +18,7 @@ For the Virtualbox provider you need to install virtualbox on your machine. Plea
 Please update the RAM and CPU values found in `Vagrantfile` to best fit you system configuration.
 
 ```console
-vb.memory = <memory in KB>
+vb.memory = <memory in MB>
 vb.cpus = <number of cpus>
 ```
 
