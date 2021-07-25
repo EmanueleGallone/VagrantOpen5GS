@@ -39,4 +39,4 @@ sudo build/nr-ue -c config/openfree5gs-ue.yml -n 3.
 
 ## References
 Partially forked from [abousselmi/vagrant-free5gc](https://github.com/abousselmi/vagrant-free5gc)
-[open5GS](https://github.com/open5gs/open5gs)
+Open5GS: [open5GS](https://github.com/open5gs/open5gs)
