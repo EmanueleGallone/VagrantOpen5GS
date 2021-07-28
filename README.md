@@ -24,7 +24,10 @@ vb.cpus = <number of cpus>
 
 ## Configuration
 
-* On free5gs-VM, edit amf.yml and upf.yml as described in https://open5gs.org/open5gs/docs/guide/01-quickstart/ (in **amf.yml** put the NGAP address = [Free5GSVM-IP], and in **upf.yml** GTPU Address = [Free5GSVM-IP]).
+* On free5gs-VM, edit amf.yml and upf.yml as described in https://open5gs.org/open5gs/docs/guide/01-quickstart/ (in **amf.yml** put the NGAP address = [Free5GSVM-IP], and in **upf.yml** GTPU Address = [Free5GSVM-IP]). Restart the services with:
+* ```console
+sudo systemctl restart open5gs-amfd open5gs-upfd
+```
 
 
 * Open the browser and connect to the [Free5gs-VM-IP]:3000 to access the WEBUI and insert all the UE info described within the UERANSIM-VM/UERANSIM/config/openfree5gs-ue.yml; If you want to use more UEs, add entries with incremental IMSI.
