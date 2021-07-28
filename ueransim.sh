@@ -2,7 +2,7 @@ sudo apt-get update
 sudo apt-get install make g++ libsctp-dev lksctp-tools -y
 sudo snap install cmake --classic
 
-sudo git clone https://github.com/aligungr/UERANSIM
+sudo git clone https://github.com/EmanueleGallone/UERANSIM
 cd UERANSIM
 sudo make
 
