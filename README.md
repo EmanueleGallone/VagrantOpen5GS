@@ -22,6 +22,9 @@ vb.memory = <memory in MB>
 vb.cpus = <number of cpus>
 ```
 
+## Warning
+You will be using 3-4 Terminals.
+
 ## Configuration
 
 * On free5gs-VM, edit amf.yml and upf.yml as described in https://open5gs.org/open5gs/docs/guide/01-quickstart/ (in /etc/open5gs/**amf.yml** put the NGAP address = [Free5GSVM-IP], and in /etc/open5gs/**upf.yml** GTPU Address = [Free5GSVM-IP]). Restart the services with:
