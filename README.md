@@ -6,6 +6,11 @@
 
 You can install vagrant by following the steps provided here: https://www.vagrantup.com/docs/installation/
 
+Install the reload plugin:
+```
+vagrant plugin install vagrant-reload
+```
+
 ### Virtualbox
 
 Please update the provider in the `Vagrantfile` with your favorite one.
